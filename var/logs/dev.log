@@ -1,0 +1,2 @@
+[2018-02-19 10:41:27] request.INFO: Matched route "gst_immobilier_homepage". {"route":"gst_immobilier_homepage","route_parameters":{"_controller":"GST\\ImmobilierBundle\\Controller\\DefaultController::indexAction","_route":"gst_immobilier_homepage"},"request_uri":"http://localhost/immobilier_symfony/web/app_dev.php/","method":"GET"} []
+[2018-02-19 10:41:27] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
