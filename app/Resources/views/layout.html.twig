@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+{% block stylesheets %}
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        
+        .jumbotron {
+            margin-bottom: 0;
+            margin-top: 15;
+        }
+        
+        
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding-left: 400px;
+            font-size: 20px;
+            
+             background-color:#696969;
+        }
+        /* Add a gray background color and some padding to the footer */
+        
+        footer {
+            background-color: #f2f2f2;
+            padding: 50px;
+            background-color:#696969;
+        }
+        
+        .carousel-inner img {
+            width: 100%;
+            /* Set width to 100% */
+            margin: auto;
+            min-height: 200px;
+        }
+        /* Hide the carousel text when the screen is less than 600 pixels wide */
+        
+        @media (max-width: 300px) {
+            .carousel-caption {
+                display: none;
+            }
+        }
+        #mil{
+          background-color:#696969;
+        
+        
+        }
+        #mil li a{ color:white;}
+    </style>
+</head>
+
+
+
+ {% endblock %}
+
+
+
+
+{% block body %}
+
+<body>
+
+<div class="container-fluid text-center">
+  <img src="{{asset('image/téléchargement.png')}}" alt="" /> 
+ 
+</div>
+
+{% block nav %}
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+
+            <div class="collapse   navbar-collapse" id="myNavbar" >
+                <ul class="nav navbar-nav " id="centrer">
+                    <li ><a href="#" style="color:white;">Accueil</a></li>
+                    <li><a href="#" style="color:white;">Nos Biens</a></li>
+                    <li><a href="#" style="color:white;">A Propros</a></li>
+                    <li><a href="#" style="color:white;">Mon Compte</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    
+{% endblock %}
+
+ {% block search %}
+<div class="form-group" style="margin-left:300px; width:1500px; padding-top:10px;" >
+    <div class="input-group input-group-sm icon-addon addon-sm" style="margin-left:120px; width:500px; padding-top:10px;">
+        <input type="text" placeholder="saisissze votre prix"style="text-align:center" name="" id="schbox" class="form-control input-sm">
+       
+    </div>
+</div>
+ 
+<div class="form-group " style="width:900px; display:flex; margin-left:500px; " >
+    <div class="form-group">
+    <div class="icon-addon addon-sm">
+        <select class="form-control input-sm">
+            <option>choix du locailté</option>
+            <option>Mariste</option>
+            <option>pikine</option>
+            <option>guédiawaye</option>
+            <option>medina</option>
+        </select>
+        <i class="icon icon-search"></i>
+    </div>
+</div>&nbsp;&nbsp;
+     <div class="form-group">
+    <div class="icon-addon addon-sm">
+        <select class="form-control input-sm">
+            <option>choisissez un type de bien</option>
+            <option>Immeuble</option>
+            <option>Appartement</option>
+            <option>Maison</option>
+        </select>
+        <i class="icon icon-search"></i>
+    </div>
+</div>
+    &nbsp;&nbsp;&nbsp;
+
+
+
+
+
+    <i class="icon icon-search"></i>
+        <span class="input-group-btn">
+            <button type="submit" class="btn btn-primary">Rechercher</button>
+        </span>
+</div>
+
+{% endblock %}
+
+ {% block content %}
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        
+
+
+<div class="carousel-inner" role="listbox" >
+      
+
+      <div class=" item active ">
+        <img src="{{asset('image/Senegalnew.jpg')}}" alt="Image">
+        
+        
+      </div>
+
+      <div class="item">
+        <img src="{{asset('image/33675-1.jpg')}}" alt="Image">
+      
+      </div>
+
+      <div class="item">
+        <img src="{{asset('image/33675-2.jpg')}}" alt="Image">
+      
+      </div>
+   </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <div class="container text-center">
+        <h3>next</h3><br>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="well">
+               <h3> conctact</h3>
+    
+                <h5>immobilier de luxe</h5>
+                <h5>rue béranger DAKAR CTIC</h5>
+                <h5>tel:781547863</h5>
+                <h5>email:immobilierdeluxe@gmail.com</h5>
+            
+                </div>
+            </div>
+
+
+        <div class="col-sm-3">
+        <img src="{{asset('image/41492.jpg')}}" class="img-responsive" style="width:100%" alt="Image">
+        <p>Maison à vendre</p>
+        <p>3 chambre et Sallon, térasse,cuisine,garrage et un espace jeux</p>
+        </div>
+            <div class="col-sm-3"> 
+      <img src="{{asset('image/IMG_0975[1].JPG')}}"reserver class="img-responsive" style="width:100%" alt="Image">
+     <p>Maison à louer</p>
+      <p>4 chambre, 2 sallons, cuisine,piscine,jardin</p>
+   
+    </div>
+            <div class="col-sm-3"> 
+      <img src="{{asset('image/images.jpeg')}}" class="img-responsive" style="width:100%" alt="Image">
+      <button>reserver</button>
+     <p>Immeuble </p>
+      <p>3 etage de 10 appartements</p>
+   
+    </div>
+<ul class="pagination pagination-alt pagination-inverse">
+   
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">6</a></li>
+    <li><a href="#">7</a></li>
+    
+</ul>
+</div>
+            </div>
+      
+        </div>
+    </div><br>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% block footter %}
+<div class="row-fluid">
+		<div class="span12   bg-inverse" style="display:flex" id="mil">
+			    <div class="span2" style="width: 30%;">
+				    <ul class="unstyled">
+					<li>GitHub<li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact & support</a></li>
+					<li><a href="#">Enterprise</a></li>
+					<li><a href="#">Site status</a></li>
+				    </ul>
+			    </div>
+
+			<div class="span2" style="width: 30%;">
+				<ul class="unstyled">
+					<li>Applications<li>
+					<li><a href="#">Product for Mac</a></li>
+					<li><a href="#">Product for Windows</a></li>
+					<li><a href="#">Product for Eclipse</a></li>
+					<li><a href="#">Product mobile apps</a></li>							
+				</ul>
+			</div>
+			
+
+
+	
+			<div class="span2" style="width: 30%;">
+				<ul class="unstyled">
+					<li>More<li>
+					<li><a href="#">Training</a></li>
+					<li><a href="#">Students & teachers</a></li>
+					<li><a href="#">The Shop</a></li>
+					<li><a href="#">Plans & pricing</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+			</div>
+
+
+        </div>
+</div>
+{% endblock %}
+</body>
+{% endblock %}
+
+</html>
